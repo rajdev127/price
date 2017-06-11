@@ -23,7 +23,7 @@ Resources:
             - ''
             - - 'MemoryUsed-'
               - Ref: LambdaFunctionName
-        MetricNamespace: ConcurrencyLabs/Lambda/
+        MetricNamespace: AwsCostCalculator/Lambda/
         MetricValue: $maxMemoryUsedValue
     Type: AWS::Logs::MetricFilter
 
@@ -41,7 +41,7 @@ Resources:
             - ''
             - - 'MemorySize-'
               - Ref: LambdaFunctionName
-        MetricNamespace: ConcurrencyLabs/Lambda/
+        MetricNamespace: AwsCostCalculator/Lambda/
         MetricValue: $memorySizeValue
     Type: AWS::Logs::MetricFilter
 
