@@ -81,7 +81,7 @@
 		    "Handler": "functions/calculate-near-realtime.handler",
 		    "Role": { "Fn::GetAtt" : ["LambdaRealtimeCalculatePricingRole", "Arn"] },
 		    "Code": {
-		      "S3Bucket": "concurrencylabs-cfn-templates",
+		      "S3Bucket": "awspricing-cfn-templates",
 		      "S3Key": "lambda-near-realtime-pricing/calculate-near-realtime-pricing-v2.0.zip"
 		    },
 		    "Runtime": "python2.7",
